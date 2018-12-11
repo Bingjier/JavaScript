@@ -1,0 +1,33 @@
+学习javascript笔记
+第一章 基本使用
+1.若是在HTML文件中则，代码需要写在<script type="text/javascript"></script>之间
+2.代码也可以单独存放在js文件中，但是必须要在HTML文件中运行，法则是<script src="script.js"></script>
+3.变量用var定义
+4.if正常使用
+5.使用function定义函数
+	注意常用语句<input type="button" value="按钮名字" onClick="函数名（）"/>效果是建立按钮，点击按钮输出函数
+第二章 基本语法
+1.关于输出语句document.write的运用(document.write("hello world");)
+2.弹窗alert用法(alert("hello world");)
+3.问题弹窗，语法：confirm(str);（str指的是你的问题）
+	返回的是boolean型
+4.信息对话框，语法：prompt(str1,str2);
+	例子:
+	var myname=prompt("请输入你的姓名:");
+	if(myname!=null)
+  {   alert("你好"+myname); }
+  else
+  {  alert("你好 my friend.");  }
+5.打开一个新界面，语法：window.open([URL],[窗口名称],[参数字符串])
+	URL：目标地址（可以是网址，路径）
+	窗口名称：_blank在新窗口创建，_self在当前页面,_top在框架上部窗口显示这个网页
+	参数字符串：详见桌面JavaScript文件夹里面的图片
+6.关闭窗口，语法：<窗口对象>.close();
+第三章 认识DOM
+1.通过ID获取元素，语法：document.getElementById("id");
+2.改变替换元素内容,语法：object.innerHTML
+3.改变元素的样式，语法：Object.style.property=new style;
+	property（属性表）：同样在桌面的JavaScript里面。
+4.改变元素原本的属性（显示与隐藏）：object.style.display=value;
+	value的选择：none为隐藏，block为显示
+5.控制类名，语法：obj.className=new classname;
